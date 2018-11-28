@@ -1,0 +1,11 @@
+#Please keep this file in parent of the root folder
+version: '2'
+services:
+  battle-api:
+    build: ./Battle-master
+    ports:
+      - 5000:3000
+    depends_on:
+    - mysql
+  database:
+    image: mysql 
